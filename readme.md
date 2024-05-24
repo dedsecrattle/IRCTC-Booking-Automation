@@ -200,6 +200,9 @@ python irctc-captcha-solver/app.py ""
 
 ```
 npm install # <---- Make Sure You Run This Command From Code Folder. 
-npx cypress run --headed --no-exit # <---- Make Sure You Run This Command From Code Folder. 
+
+npm run config # <---- Write all the Information about the passenger and irctc account
+
+npm run book # <--- Automatic booking process will start
 ```
 
