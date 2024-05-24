@@ -198,11 +198,11 @@ python irctc-captcha-solver/app.py ""
 
 ### Last Step That's It...........
 
-```
-npm install # <---- Make Sure You Run This Command From Code Folder. 
 
-npm run config # <---- Write all the Information about the passenger and irctc account
+`npm install # <---- Make Sure You Run This Command From Code Folder.` 
 
-npm run book # <--- Automatic booking process will start
-```
+`npm run config # <---- Write all the Information about the passenger and irctc account`
+
+`npm run book # <--- Automatic booking process will start`
+
 
