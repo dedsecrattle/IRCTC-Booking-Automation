@@ -198,15 +198,19 @@ python irctc-captcha-solver/app.py ""
 
 ### Last Step That's It...........
 
-# <---- Make Sure You Run This Command From Code Folder. 
+#### Run this Command to install required all the dependencies
 ```
 npm install
 ```
-# <---- Write all the Information about the passenger and irctc account
+#### Run this Command to configure Passenger, Train Number , IRCTC account according to your need
 ```
 npm run config 
 ```
-# <--- Automatic booking process will start
+
+#### Now open the Link provided and fill the details and click on Save 
+
+
+#### Run this Command and Automatic booking process will start
 ```
 npm run book 
 ```
