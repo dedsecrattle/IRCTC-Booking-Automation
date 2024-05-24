@@ -1,4 +1,7 @@
 {
+  "USERNAME": "sadfas",
+  "PASSWORD": "asfsafa",
+  "AUTO_CAPTCHA": false,
   "TRAIN_NO": "12559",
   "TRAIN_COACH": "SL",
   "TRAVEL_DATE": "18/05/2024",
@@ -8,18 +11,13 @@
   "TATKAL": false,
   "PREMIUM_TATKAL": false,
   "UPI_ID_CONFIG": "",
+  "CONTACT": "",
+  "CONTACT_EMAIL": "",
   "PASSENGER_DETAILS": [
     {
-      "NAME": "Shivam Pandey",
-      "AGE": 26,
+      "NAME": "Prabhat Kumar",
+      "AGE": 20,
       "GENDER": "Male",
-      "SEAT": "No Preference",
-      "FOOD": "No Food"
-    },
-    {
-      "NAME": "Shivam Dubey",
-      "AGE": 26,
-      "GENDER": "Female",
       "SEAT": "No Preference",
       "FOOD": "No Food"
     }

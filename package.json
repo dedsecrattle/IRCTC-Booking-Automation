@@ -3,12 +3,16 @@
   "version": "3.0.3",
   "description": "IRCTC Ticket Booking",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run",
+    "config": "node ./src/server.js",
+    "book": "npx cypress run --headed --no-exit"
   },
   "author": "Shivam Pandey",
   "license": "ISC",
   "dependencies": {
     "cypress": "13.7.1",
-    "dayjs": "^1.11.10"
+    "dayjs": "^1.11.10",
+    "express": "^4.19.2",
+    "open": "^10.1.0"
   }
 }

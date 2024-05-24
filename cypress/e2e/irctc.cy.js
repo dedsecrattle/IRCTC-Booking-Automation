@@ -1,7 +1,4 @@
-
-let username = Cypress.env('USERNAME')
-let password = Cypress.env('PASSWORD')
-import { PASSENGER_DETAILS, SOURCE_STATION, DESTINATION_STATION, TRAIN_NO, TRAIN_COACH, TRAVEL_DATE, TATKAL, PREMIUM_TATKAL, BOARDING_STATION, UPI_ID_CONFIG } from '../fixtures/passenger_data.json'
+import {USERNAME, PASSWORD, CONTACT, CONTACT_EMAIL, PASSENGER_DETAILS, SOURCE_STATION, DESTINATION_STATION, TRAIN_NO, TRAIN_COACH, TRAVEL_DATE, TATKAL, PREMIUM_TATKAL, BOARDING_STATION, UPI_ID_CONFIG } from '../fixtures/passenger_data.json'
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
@@ -34,8 +31,8 @@ describe('IRCTC TATKAL BOOKING', () => {
     const isValidUpiId = upiRegex.test(UPI_ID);
 
     cy.get('.h_head1 > .search_btn').click()
-    cy.get(':nth-child(1) > .form-control').invoke('val', username).trigger('input')
-    cy.get(':nth-child(2) > .form-control').invoke('val', password).trigger('input')
+    cy.get(':nth-child(1) > .form-control').invoke('val', USERNAME).trigger('input')
+    cy.get(':nth-child(2) > .form-control').invoke('val', PASSWORD).trigger('input')
 
 
     // Submitting captcha block starts........
@@ -211,6 +208,12 @@ describe('IRCTC TATKAL BOOKING', () => {
             }
           })
 
+          //For Filling Contact Details
+          cy.get('body').then((body) => {
+            if (body.find('select[formcontrolname="mobileNumber"]').length > 0) {
+              cy.get('#mobileNumber').clear().type(CONTACT);
+            }
+          })
 
 
 
